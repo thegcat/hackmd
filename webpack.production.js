@@ -1,3 +1,7 @@
+var fs = require('fs');
+var gracefulFs = require('graceful-fs');
+gracefulFs.gracefulify(fs);
+
 var baseConfig = require('./webpackBaseConfig')
 var webpack = require('webpack')
 var path = require('path')
